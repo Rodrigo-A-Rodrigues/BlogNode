@@ -1,0 +1,26 @@
+{{> header}}
+<h2>Adicionar Post</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <label>
+        Background:
+        <input type="file" name="photo" />
+    </label>
+    <label>
+        Titulo:
+        <input type="text" name="title"/>
+    </label>
+    <label>
+        Descrição:
+        <input type="text" name="description"/>
+    </label>
+    <label>
+        Artigo:
+        <textarea type="text" name="body"> </textarea>
+    </label>
+    <label>
+        TAGS: <small>(Separar por vírgulas)</small>
+        <input type="text" name="tags"/>
+    </label>
+    <input type="submit" value="Enviar"/>
+</form>

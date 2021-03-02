@@ -1,0 +1,21 @@
+{{> header}}
+<h1>Seja bem vindo(a)</h1>
+
+{{#mostrar}}
+<p>Nome: {{nome}}</p>
+<p>idade: {{idade}}</p>
+{{/mostrar}}
+
+<p>Usuário logado: {{usersInfo.name}}</p>
+
+{{#posts}}
+<div class="post">
+    {{#photo}}
+    <img src="/upload/{{photo}}"/>
+    {{/photo}}
+    <h3><a href="/post/{{slug}}">{{title}}</a></h3>
+    <h5>{{description}}</h5>
+    <p>{{body}}</p>
+    <a href="/post/{{slug}}/edit">[ editar ]</a>
+</div>
+{{/posts}}
