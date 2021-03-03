@@ -8,6 +8,12 @@
 
 <p>Usuário logado: {{usersInfo.name}}</p>
 
+<div class="tags">
+    {{#tags}}
+        <div class="tag {{class}}"><a href="/?t={{_id}}">{{_id}} ({{count}})</a></div>
+    {{/tags}}
+</div>
+
 {{#posts}}
 <div class="post">
     {{#photo}}

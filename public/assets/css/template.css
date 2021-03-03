@@ -111,7 +111,11 @@ input[type=submit]:hover
 }
 .tags .tag 
 {
-    padding:10px;
+    padding: 5px 10px;
+    background-color: rgb(199, 199, 199);
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 15px;
+    margin: 5px 5px 5px 5px;
 }
 .tag.selected a 
 {
