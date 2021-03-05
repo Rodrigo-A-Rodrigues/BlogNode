@@ -12,8 +12,9 @@ header
     padding:10px;
     border-bottom:1px solid #CCC;
 }
-h1{
-    text-align: center;
+h1 
+{
+    text-align:center;
 }
 header h1 
 {
@@ -56,6 +57,12 @@ li
     color:#FFF;
     padding:10px 20px;
     border-radius:5px;
+}
+.userlog{
+    text-align: center;
+}
+.container{
+    margin: auto;
 }
 .post 
 {
@@ -108,17 +115,17 @@ input[type=submit]:hover
 .tags 
 {
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items:center;
     margin-top:10px;
 }
 .tags .tag 
 {
+    margin: 5px;
     padding: 5px 10px;
-    background-color: rgb(199, 199, 199);
-    border: 1px solid rgb(199, 199, 199);
     border-radius: 15px;
-    margin: 5px 5px 5px 5px;
+    background-color: #999;
 }
 .tag.selected a 
 {
