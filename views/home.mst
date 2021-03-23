@@ -1,6 +1,5 @@
 {{> header}}
 <h1>Seja bem vindo(a)</h1>
-<p class="userlog">Usuário logado: {{usersInfo.name}}</p>
 
 <div class="tags">
     {{#tags}}
@@ -15,7 +14,6 @@
         {{/photo}}
         <h3><a href="/post/{{slug}}">{{title}}</a></h3>
         <h5>{{description}}</h5>
-        <p>{{body}}</p>
         <a href="/post/{{slug}}/edit">[ editar ]</a>
     </div>
     {{/posts}}

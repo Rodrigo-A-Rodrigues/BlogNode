@@ -4,9 +4,16 @@
 <h1>{{post.title}}</h1>
 
 <article>
-{{post.description}} 
-<hr/>
-{{post.body}}
-<hr/>
-<small>{{post.tags}}</small>
+  
+  <div class="subtitle">
+    {{post.description}}
+  </div> 
+  
+  <p>
+    {{post.body}}
+  </p>
+  
+  <hr/>
+  
+  <small>{{post.tags}}</small>
 </article>

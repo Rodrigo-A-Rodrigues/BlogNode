@@ -10,7 +10,6 @@ exports.userMiddleware = (req,res,next) => {
 exports.index = async (req, res)=>{
     let responseJson = {
         pageTitle: 'HOME',
-        usersInfo: req.userInfo,
         posts:[],
         tags:[]
     };

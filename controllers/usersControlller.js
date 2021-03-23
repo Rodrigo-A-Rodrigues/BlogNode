@@ -1,6 +1,6 @@
 const User = require('../models/User');
 
-exports.login = (req, res)=>{
+exports.login = (req, res) => {
     res.render('login');
 }
 
@@ -13,6 +13,8 @@ exports.loginAction = (req,res) => {
             res.redirect('/users/login');
             return;
         }
+
+        req.login(result, ()=>{}); // Efitivação do login
 
         req.flash('success', 'Você está conectado!');
         res.redirect('/');
@@ -37,4 +39,9 @@ exports.registerAction = (req,res) => {
         res.redirect('/users/login');
 
     });
+}
+
+exports.logout = (req,res) => {
+    req.logout();
+    res.redirect('/');
 }

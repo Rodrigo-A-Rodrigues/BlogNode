@@ -11,13 +11,24 @@
 
     <body>
         <header>
-            <h1>Cabeçalho</h1>
-            <hr/>  
-            <ul>
+            <div class="logo">
+                EasyWeb<span>App</span>
+            </div>
+            <ul class="menu">
                 {{#h.menu}}
                     <li><a href={{slug}}>{{name}}</a></li>
                 {{/h.menu}}
-            </ul> 
+            </ul>
+
+            {{#user}}
+                <p class="userlog">
+                    <div class="img-profile"></div>
+                    <div class="data">
+                        {{user.name}}
+                        <a href="/users/logout" class="logout">Sair</a>
+                    </div>
+                </p> 
+            {{/user}}
         </header>
         {{#flashes}}
         <div>
